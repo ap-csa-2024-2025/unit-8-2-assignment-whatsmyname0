@@ -16,21 +16,46 @@ public class Main
 
   public static double sumArray(double[] arr)
   {
-    return 0.0;
+    double sum = 0.0;
+    for (int i = 0; i < arr.length; i++)
+    {
+      sum += arr[i];
+    }
+    return sum;
   }
 
   public static double averageLength(String[] arr)
   {
-    return 0.0;
+    int sum = 0;
+    for (int i = 0; i < arr.length; i++)
+    {
+      sum += arr[i].length()
+    }
+    return sum / arr.length;
   }
 
   public static int arrayMax(int[] arr)
   {
-    return Integer.MIN_VALUE;
+    int max = Integer.MIN_VALUE
+    for (int i = 0; i < arr.length; i++)
+    {
+      if (arr[i] < max)
+      {
+        max = arr[i];
+      }
+    }
+    return max;
   }
 
-  public static boolean linearSearch(String[] arr)
+  public static boolean linearSearch(String[] arr, String target)
   {
+    for (int i = 0; i < arr.length; i++)
+    {
+      if (arr[i].equals(target))
+      {
+        return true;
+      }
+    }
     return false;
   }
 }
